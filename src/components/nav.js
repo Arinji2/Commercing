@@ -33,7 +33,7 @@ class Navbar extends Component {
               ></img>
             </li>
             <div
-              className="sticky flex opacity-0 md:opacity-100 md:flex flex-col md:flex-row md:justify-between items-end pr-10 md:items-center p-2 w-screen md:pl-7 transition-opacity ease-in-out duration-500"
+              className="sticky flex opacity-0 md:opacity-100 md:flex flex-col md:flex-row md:justify-between items-end pr-10 md:items-center p-2 w-screen md:pl-7 transition-opacity ease-out duration-500"
               id="navbar"
             >
               <li className="hover:text-yellow-400 transition-all ease-in-out duration-300 hover:scale-100 md:scale-75  hover:cursor-pointer">
