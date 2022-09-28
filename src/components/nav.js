@@ -3,6 +3,7 @@ import logo from "../assets/logo.png";
 import { faBars } from "@fortawesome/fontawesome-free-solid";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Script from "react-inline-script";
 import Home from "../pages/home";
 import About from "../pages/about";
 import Downloads from "../pages/downloads";
@@ -17,7 +18,7 @@ class Navbar extends Component {
     let button = document.getElementById("burger-button");
     if (menu.style.opacity !== "1") {
       menu.style.opacity = "1";
-      menuParent.style.backgroundColor = "rgb(23 23 23 / var(--tw-bg-opacity))";
+      menuParent.style.backgroundColor = "#171717";
     } else {
       menu.style.opacity = "0";
       menuParent.style.backgroundColor = "transparent";
@@ -36,12 +37,13 @@ class Navbar extends Component {
       }, 500);
     }
   }
+
   render() {
     return (
       <div>
         <Router>
           <div
-            className="bg-transparent  text-white text-2xl md:text-3xl pr-3 pl-3 fixed top-0 w-screen z-10"
+            className="bg-transparent active:bg-neutral-900 text-white text-2xl md:text-3xl pr-3 pl-3 fixed top-0 w-screen z-10 transition-all ease-in-out duration-300"
             id="menuParent"
           >
             <ul className="sticky flex flex-col md:flex-row md:justify-between items-start md:items-center p-2">
