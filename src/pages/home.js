@@ -6,17 +6,18 @@ class Home extends Component {
   state = {};
   render() {
     return (
-      <div className="h-full max-w-full  flex flex-col items-center ">
+      <div className="h-full max-w-full  flex flex-col items-center overflow-hidden">
         <div className="">
           <img
             src={Hero}
             alt={Hero}
             className="min-w-full max-h-full hidden md:block opacity-40"
           />
+
           <img
             src={HeroMobile}
             alt={HeroMobile}
-            className="min-w-full h-screen block md:hidden opacity-40 blur-sm"
+            className="h-screen max-w-6xl block md:hidden opacity-40"
           />
           <div className="flex flex-col items-center">
             <p className="absolute md:bottom-96 top-72  text-white text-3xl md:text-7xl opacity-90 font-bold">
