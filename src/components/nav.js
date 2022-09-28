@@ -20,10 +20,10 @@ class Navbar extends Component {
       menuParent.style.backgroundColor = "rgb(23 23 23 / var(--tw-bg-opacity))";
     } else {
       menu.style.opacity = "0";
-      menuParent.style.backgroundColor = "black";
+      menuParent.style.backgroundColor = "transparent";
     }
     button.classList.toggle("fa-spin");
-    if (menuParent.style.backgroundColor === "black") {
+    if (menuParent.style.backgroundColor === "transparent") {
       setTimeout(() => {
         button.classList.toggle("fa-spin");
         button.classList.toggle("fa-rotate-90");
@@ -41,7 +41,7 @@ class Navbar extends Component {
       <div>
         <Router>
           <div
-            className="bg-black md:bg-neutral-900  text-white text-2xl md:text-3xl pr-3 pl-3 fixed top-0 w-screen"
+            className="bg-transparent  text-white text-2xl md:text-3xl pr-3 pl-3 fixed top-0 w-screen z-10"
             id="menuParent"
           >
             <ul className="sticky flex flex-col md:flex-row md:justify-between items-start md:items-center p-2">
@@ -100,7 +100,7 @@ class Navbar extends Component {
           icon={faBars}
           onClick={this.handleBurgerClick}
           id="burger-button"
-          className="text-white right-3 top-8 text-3xl md:hidden fixed"
+          className="text-white right-3 top-8 text-3xl md:hidden fixed z-10"
         />
       </div>
     );
