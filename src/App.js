@@ -7,7 +7,7 @@ function App() {
     var scrolled = document.scrollingElement.scrollTop;
     let navbar = document.getElementById("menuParent");
     if (window.screen.width < 768) return;
-    if (scrolled >= 300) navbar.style.backgroundColor = "#171717";
+    if (scrolled >= 120) navbar.style.backgroundColor = "#171717";
     else navbar.style.backgroundColor = "transparent";
   }
   window.addEventListener("scroll", handleScroll);
