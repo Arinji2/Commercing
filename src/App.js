@@ -1,6 +1,4 @@
 import "./App.css";
-import Hero from "../assets/Hero.jpg";
-import HeroMobile from "../assets/HeroMobile.jpg";
 
 import Navbar from "./components/nav";
 
